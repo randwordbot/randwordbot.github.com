@@ -5,4 +5,4 @@ RandWordBot is a random word bot that spews non-sensical word-hyperlinks into la
 The files are uploaded here and linked to each other automagically.
 
 ##Why?##
-for fun.
+We may never know.
