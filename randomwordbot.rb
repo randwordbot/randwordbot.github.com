@@ -4,15 +4,13 @@ $lengthmax = 10
 $letters = "abcdefghijklmnopqrstuvwxyz"
 $size = $letters.length;
 
+#god file created here
+$time = Time.new
+$filename = $time.to_i.to_s + ".html"
 $neverstop=0
 while $neverstop != 1
 	$filecount = 0;
-
-	#first time init
-	$time = Time.new
-	$filename = $time.to_i.to_s + ".html"
-
-	while $filecount < 2
+	while $filecount < 10
 		$f = File.new($filename,  "w+")
 		$x = 0
 		# $f.write($word.to_s+ " ")
