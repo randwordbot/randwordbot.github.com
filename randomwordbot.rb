@@ -16,7 +16,7 @@ while $filecount < 2
 	$wordcount = 0;
 	$firstWord = '';
 	$bigString = '';
-	while $wordcount < 1000 do	
+	while $wordcount < 100000 do	
 		$wordlength = rand($lengthmax);
 		$newletters = 0
 		$word = String.new
@@ -24,6 +24,7 @@ while $filecount < 2
 	 		$word[$newletters] = $letters[rand($size)]
 	 		$newletters = $newletters+1;
 		end
+		#puts $word.to_s
 		$bigString += $word.to_s + " ";
 		$wordcount += 1;
 	end
