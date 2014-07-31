@@ -4,10 +4,10 @@ $lengthmax = 10
 $letters = "abcdefghijklmnopqrstuvwxyz"
 $size = $letters.length;
 
-$f = File.new("newfile.txt",  "w+")
+$f = File.new("newfile.html",  "w+")
 
 $x = 0
-while File.stat("newfile.txt").size < 12000000 do
+while File.stat("newfile.html").size < 12000000 do
 	$wordlength = rand($lengthmax);
 	$newletters = 0
 	$word = String.new
