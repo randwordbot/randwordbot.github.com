@@ -1,4 +1,4 @@
-[randwordbot.github.com](http://www.randwordbot.github.com)
+[randwordbot.github.com](http://randwordbot.github.com)
 ======================
 
 RandWordBot is a random word bot that spews non-sensical word-hyperlinks into large files.
