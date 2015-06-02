@@ -4,6 +4,8 @@ $lengthmax = 10
 $letters = "abcdefghijklmnopqrstuvwxyz"
 $size = $letters.length;
 
+print "starting"
+
 #god file created here
 $time = Time.new
 $filename = $time.to_i.to_s + ".html"
@@ -17,7 +19,7 @@ while $neverstop != 1
 		$wordcount = 0;
 		$firstWord = '';
 		$bigString = '';
-		while $wordcount < 100000 do	
+		while $wordcount < 1000 do	
 			$wordlength = rand($lengthmax);
 			$newletters = 0
 			$word = String.new
@@ -35,11 +37,23 @@ while $neverstop != 1
 		$time = Time.new
 		$filename = $time.to_i.to_s + ".html"
 		$filecount += 1;
-		$f.write($bigString + "<br><br><center><a href="+ "'./" +$filename + "'" + ">"+"NEXT" + "</a></center></br>");
+
+		puts "writing to file"
+		$adstring = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- randomwords -->
+						<ins class="adsbygoogle"
+     					style="display:inline-block;width:728px;height:90px"
+     					data-ad-client="ca-pub-2175029674789427"
+     					data-ad-slot="6388827040"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+					<br/>';
+		$f.write($adstring + $bigString + "<br><br><center><a href="+ "'./" +$filename + "'" + ">"+"NEXT" + "</a></center></br>");
 	end
 
-	system 'git add --all'
-	system 'git commit -a -m "new filez"'
-	system 'git pull origin master'
-	system 'git push origin master'
+	# system 'git add --all'
+	# system 'git commit -a -m "new filez"'
+	# system 'git pull origin master'
+	# system 'git push origin master'
 end
