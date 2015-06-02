@@ -12,7 +12,7 @@ $filename = $time.to_i.to_s + ".html"
 $neverstop=0
 while $neverstop != 1
 	$filecount = 0;
-	while $filecount < 100
+	while $filecount < 1000
 		$f = File.new("./data/"+$filename,  "w+")
 		$x = 0
 		# $f.write($word.to_s+ " ")
