@@ -49,6 +49,7 @@ while $neverstop != 1
 					</script>
 					<br/>';
 		$f.write($adstring + $bigString + "<br><br><center><a href="+ "'./" +$filename + "'" + ">"+"NEXT" + "</a></center></br>");
+		sleep(60);
 	end
 
 	system 'git add --all'
