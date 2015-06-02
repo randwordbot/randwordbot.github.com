@@ -12,7 +12,7 @@ $filename = $time.to_i.to_s + ".html"
 $neverstop=0
 while $neverstop != 1
 	$filecount = 0;
-	while $filecount < 10
+	while $filecount < 1000
 		$f = File.new($filename,  "w+")
 		$x = 0
 		# $f.write($word.to_s+ " ")
@@ -38,7 +38,6 @@ while $neverstop != 1
 		$filename = $time.to_i.to_s + ".html"
 		$filecount += 1;
 
-		puts "writing to file"
 		$adstring = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 						<!-- randomwords -->
 						<ins class="adsbygoogle"
@@ -52,8 +51,8 @@ while $neverstop != 1
 		$f.write($adstring + $bigString + "<br><br><center><a href="+ "'./" +$filename + "'" + ">"+"NEXT" + "</a></center></br>");
 	end
 
-	# system 'git add --all'
-	# system 'git commit -a -m "new filez"'
-	# system 'git pull origin master'
-	# system 'git push origin master'
+	system 'git add --all'
+	system 'git commit -a -m "new filez"'
+	system 'git pull origin master'
+	system 'git push origin master'
 end
